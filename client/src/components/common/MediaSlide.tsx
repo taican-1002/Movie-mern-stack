@@ -16,6 +16,7 @@ const MediaSlide = ({ mediaType, mediaCategory }: MediaSlideProps) => {
         mediaCategory,
         page: 1,
       });
+
       if (response) setMedias(response.data.results);
       if (error) toast.error(error.message);
     };
